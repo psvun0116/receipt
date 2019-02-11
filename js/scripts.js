@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".location").text(locationInput);
     $(".date").text(dateInput);
 
-    $("#story").show();
+    $("#receipt").show();
 
     event.preventDefault();
 
