@@ -25,9 +25,9 @@
           </div>
           <div class="form-group">
             <label for="date">Date</label>
-            <input id="date" class="form-control" type="text">
+            <input id="date" class="form-control" type="date">
           </div>
-          <button type="submit" class="btn">Purchase!</button>
+          <button type="submit" class="btn btn-danger" id="purchase">Purchase!</button>
         </form>
       </div>
     </div>
@@ -35,25 +35,23 @@
     <div class="container">
       <div id="receipt">
         <h1>Thank you for your purchase</h1>
-        <p>Please confirm all information is correct</p>
-
-      <h2>Invoice</h2>
-        <div class="row">
-        <div class="column">
-          <h3>Receipt</h3>
-          <ul>
-            <li>Name of Purchaser: <span class="name"></span></li>
-            <li>Address:</li>
-              <address>
-                <span class="address"></span></br>
-                <span class="location"></span>
-              </address>
-              <li>Item: Apple MacBook Pro 13" display</li>
-              <li>Cost: $1,3000</li>
-              <li>Date:<span class="date"><span></li>
-          </ul>
-          <h3>Return Policy:</h3>
-            <p>Items shipped can be returned within 30 days of receipt of shipment in most cases, for a full refund. Items that are returned can take up to 20 days, please contact us once you have shipped item. Items will take up to 2-5 business days for refund amount to show up to your account.</p>
+          <p>Please confirm all information is correct</p>
+        <h2>Invoice</h2>
+          <div class="column">
+            <h3>Receipt</h3>
+              <ul>
+                <li>Name of Purchaser: <span class="name"></span></li>
+                <li>Address:</li>
+                  <address>
+                    <span class="address"></span></br>
+                    <span class="location"></span>
+                  </address>
+                <li>Item: Apple MacBook Pro 13" display</li>
+                <li>Cost: $1,3000</li>
+                <li>Date: <span class="date"><span></li>
+              </ul>
+            <h3>Return Policy:</h3>
+              <p>Items shipped can be returned within 30 days of receipt of shipment in most cases, for a full refund. Items that are returned can take up to 20 days, please contact us once you have shipped item. Items will take up to 2-5 business days for refund amount to show up to your account.</p>
             <h3>Contact info:</h3>
               <address>
                 Laptops Inc.</br>
@@ -61,27 +59,29 @@
                 Seattle, WA 98101</br>
                 (206)888-0188</br>
               </address>
-        </div>
-    </div>
+          </div>
+        <button type="submit" class="btn btn-success" id="confirm">Confirm!</button>
+      </div>
 
-    <h2>Shipping Label</h2>
-    <div class="column">
-      <address>
-        Laptops Inc.</br>
-        1234 South Street</br>
-        Seattle, WA 98101</br>
-        (206)888-0188</br>
-      </address>
-      <img src="img/images.png" alt="pic of barcode">
-
-      <h2>Ship To:</h2>
-        <address>
-          <span class="name"></span></br>
-          <span class="address"></span></br>
-          <span class="location"></span></br>
-        </address>
-        <img src="img/barcode.png" alt="pic of bar code">
-        <span class="date"></span>
+      <div id="shipping">
+        <h2>Shipping Label</h2>
+          <div class="column">
+            <address>
+              Laptops Inc.</br>
+              1234 South Street</br>
+              Seattle, WA 98101</br>
+              (206)888-0188</br>
+            </address>
+            <img src="img/images.png" alt="pic of barcode">
+        <h2>Ship To:</h2>
+          <address>
+            <span class="name"></span></br>
+            <span class="address"></span></br>
+            <span class="location"></span></br>
+          </address>
+          <img src="img/barcode.png" alt="pic of bar code">
+          <span class="date"></span>
+          </div>
       </div>
     </div>
   </body>

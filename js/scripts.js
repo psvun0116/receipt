@@ -14,5 +14,11 @@ $(document).ready(function() {
 
     event.preventDefault();
 
+    $("button#confirm").click(function() {
+  	   alert("Are you sure you wish to confirm your purchase?");
+
+    $("#shipping").show();
+
+    });
   });
 });
